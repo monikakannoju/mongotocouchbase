@@ -1,0 +1,903 @@
+2025-08-28T11:48:24.286+05:30  INFO 28152 --- [Testing] [main] com.demo.testing.TestingApplication      : Starting TestingApplication using Java 17.0.15 with PID 28152 (C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project\target\classes started by BommulaMallikaDurgaS in C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project)
+2025-08-28T11:48:24.289+05:30  INFO 28152 --- [Testing] [main] com.demo.testing.TestingApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T11:48:24.349+05:30  WARN 28152 --- [Testing] [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 7.0. Please annotate the following attributes in @org.springframework.retry.annotation.EnableRetry with appropriate @AliasFor declarations: [proxyTargetClass]
+2025-08-28T11:48:26.098+05:30  INFO 28152 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-28T11:48:26.101+05:30  INFO 28152 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-28T11:48:26.125+05:30  INFO 28152 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 MongoDB repository interfaces.
+2025-08-28T11:48:27.261+05:30  INFO 28152 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T11:48:27.284+05:30  INFO 28152 --- [Testing] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T11:48:27.285+05:30  INFO 28152 --- [Testing] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-28T11:48:27.416+05:30  INFO 28152 --- [Testing] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T11:48:27.417+05:30  INFO 28152 --- [Testing] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3050 ms
+2025-08-28T11:48:27.640+05:30  INFO 28152 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring JWT decoder with JWK Set URI: https://dev-qyezg6s35kzzqg7v.us.auth0.com/.well-known/jwks.json
+2025-08-28T11:48:27.817+05:30  WARN 28152 --- [Testing] [main] com.demo.security.EncryptionService      : No encryption key configured, generating new key. THIS IS NOT SECURE FOR PRODUCTION!
+2025-08-28T11:48:27.834+05:30  INFO 28152 --- [Testing] [main] com.demo.security.EncryptionService      : Generated encryption key (save this in configuration): w3h3CZM8opEcpaMBhwLQYZ/zXt3JoBxaXSO2jl33qQI=
+2025-08-28T11:48:29.090+05:30  INFO 28152 --- [Testing] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1a8e44fe], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@287317df, com.mongodb.Jep395RecordCodecProvider@1fcc3461, com.mongodb.KotlinCodecProvider@1987807b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@71469e01], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-08-28T11:48:29.137+05:30  INFO 28152 --- [Testing] [cluster-ClusterId{value='68aff4b4499f42b78773511e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33810300, minRoundTripTimeNanos=0}
+2025-08-28T11:48:29.566+05:30  INFO 28152 --- [Testing] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-28T11:48:29.688+05:30  INFO 28152 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring enhanced security for profile: []
+2025-08-28T11:48:29.695+05:30  INFO 28152 --- [Testing] [main] com.demo.config.SecurityConfig           : Configured CORS with allowed origins: [http://localhost:3000, http://127.0.0.1:3000]
+2025-08-28T11:48:30.904+05:30  INFO 28152 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-08-28T11:48:30.907+05:30  INFO 28152 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@70f0c352]]
+2025-08-28T11:48:30.910+05:30  INFO 28152 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-08-28T11:48:30.942+05:30  INFO 28152 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T11:48:31.007+05:30  INFO 28152 --- [Testing] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.3.45:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spring-boot-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spring-boot-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-28T11:48:31.076+05:30  INFO 28152 --- [Testing] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-28T11:48:31.293+05:30  INFO 28152 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-28T11:48:31.293+05:30  INFO 28152 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-28T11:48:31.293+05:30  INFO 28152 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756361911290
+2025-08-28T11:48:31.312+05:30  INFO 28152 --- [Testing] [main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Subscribed to topic(s): mongo-metadata
+2025-08-28T11:48:31.346+05:30  INFO 28152 --- [Testing] [main] com.demo.testing.TestingApplication      : Started TestingApplication in 7.721 seconds (process running for 8.299)
+2025-08-28T11:48:32.030+05:30  INFO 28152 --- [Testing] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Cluster ID: 6FsN0IuMQIusqCVnGAFpyQ
+2025-08-28T11:49:30.881+05:30  INFO 28152 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-08-28T12:16:35.607+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [${jndi:dns://MDEDiscovery75d709655bCookie-8080}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-08-28T12:16:35.616+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T12:16:35.616+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T12:16:35.621+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-28T12:16:35.763+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-5] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:35.763+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:35.763+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /struts2-showcase/struts/utils.js
+2025-08-28T12:16:35.763+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:35.763+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:35.818+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:35.818+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:35.818+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:35.818+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /struts2-showcase/struts/utils.js from 127.0.0.1
+2025-08-28T12:16:35.818+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:35.855+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:35.855+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:35.856+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:35.856+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-5] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:35.868+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:36.352+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /oXygenLicenseServlet/index.jsp
+2025-08-28T12:16:36.356+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /dashboard/
+2025-08-28T12:16:36.356+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /oXygenLicenseServlet/index.jsp from 127.0.0.1
+2025-08-28T12:16:36.359+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /dashboard/ from 127.0.0.1
+2025-08-28T12:16:36.361+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:36.367+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:36.771+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/js/?${jndi:dns://MDEDiscovery75d709655bSeenInTheWildGet-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:478) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-08-28T12:16:38.382+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.383+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.383+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.382+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.384+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.384+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.384+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.384+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /struts2-showcase/struts/tooltip.gif
+2025-08-28T12:16:38.386+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /struts2-showcase/struts/tooltip.gif from 127.0.0.1
+2025-08-28T12:16:38.386+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.387+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.386+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.387+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.389+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.394+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.395+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.397+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.398+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.398+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.399+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.399+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.399+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-5] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.399+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.399+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.400+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.400+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.402+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.402+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.403+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.405+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /struts2-showcase/struts/domtt.css
+2025-08-28T12:16:38.406+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.406+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /struts2-showcase/struts/domtt.css from 127.0.0.1
+2025-08-28T12:16:38.408+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.410+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.414+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.415+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.411+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.416+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.418+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-5] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.419+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.419+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.419+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.420+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.420+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.423+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.421+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.424+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.426+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.429+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.429+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.429+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.431+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.432+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.431+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.434+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.434+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.434+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.436+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.437+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.439+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.439+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.440+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.441+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /struts2-showcase/struts/domTT.js
+2025-08-28T12:16:38.443+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.446+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /struts2-showcase/struts/domTT.js from 127.0.0.1
+2025-08-28T12:16:38.447+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.445+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.448+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.450+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.452+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.453+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.459+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.464+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.462+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.468+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.471+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.477+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.477+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.479+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.481+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.483+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.483+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.481+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.484+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.491+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.491+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.491+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.494+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.495+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.496+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.500+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.501+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.502+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.502+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.511+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.511+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.514+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.514+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.520+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.523+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.523+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.524+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.525+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.530+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.538+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.542+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.543+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.545+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.549+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.545+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.553+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.554+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.556+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.556+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/struts2-showcase/${jndi:dns://MDEDiscovery75d709655bApacheStruts2-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:486) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-08-28T12:16:38.560+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.563+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.569+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.569+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.573+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.574+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.576+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.577+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.579+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.579+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.583+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.585+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.586+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.586+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.591+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.590+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.591+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.597+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.598+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.599+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.601+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.602+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.602+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.606+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.610+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.615+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.618+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.618+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.624+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.628+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.630+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.631+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.619+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.634+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.634+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.635+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.635+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.637+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.640+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.647+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.649+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.649+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.652+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.654+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.654+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.658+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.661+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.661+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.661+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.662+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.664+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.664+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.668+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.668+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.672+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.672+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.678+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.680+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.681+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.681+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.684+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.685+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.687+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.687+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.688+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.692+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.694+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.697+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.698+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.701+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.702+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.706+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.708+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /
+2025-08-28T12:16:38.708+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.709+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.709+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: / from 127.0.0.1
+2025-08-28T12:16:38.712+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.713+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.718+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /:undefined
+2025-08-28T12:16:38.718+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.720+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.security.SecurityEventService   : SECURITY_EVENT [High (3): Significant security issue requiring prompt investigation] ACCESS_DENIED: Access denied to resource - Unauthorized access attempt: /:undefined from 127.0.0.1
+2025-08-28T12:16:38.722+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: GET /error
+2025-08-28T12:16:38.724+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.723+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.728+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.728+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.732+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.737+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.738+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.738+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.742+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.742+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.745+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.745+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.749+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.749+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.752+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.753+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.756+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.756+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.760+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.760+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.763+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.763+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.766+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.766+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.768+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.771+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.771+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.774+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.778+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.778+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.784+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.784+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.787+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:38.791+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.224+05:30  INFO 28152 --- [Testing] [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/api/v2/${jndi:dns://MDEDiscovery75d709655bSeenInTheWildGet-8080} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:486) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-08-28T12:16:39.232+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.236+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.239+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.244+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.249+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.255+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.256+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.260+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.264+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-1] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.267+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.271+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.274+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.277+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.280+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.284+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.287+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.290+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-5] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.295+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.298+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.302+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.306+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.310+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.314+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.319+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.322+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.326+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-7] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.334+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-4] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.337+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.399+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-2] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.404+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-8] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.410+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-9] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:39.413+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-6] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:40.670+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-10] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:16:40.676+05:30  WARN 28152 --- [Testing] [http-nio-8080-exec-3] com.demo.config.RateLimitingFilter       : Rate limit exceeded: Rate limit exceeded: too many requests per minute
+2025-08-28T12:19:30.895+05:30  INFO 28152 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2025-08-28T12:37:50.846+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:38:49.468+05:30 DEBUG 28152 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:39:23.159+05:30  INFO 23268 --- [Testing] [main] com.demo.testing.TestingApplication      : Starting TestingApplication using Java 17.0.15 with PID 23268 (C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project\target\classes started by BommulaMallikaDurgaS in C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project)
+2025-08-28T12:39:23.164+05:30  INFO 23268 --- [Testing] [main] com.demo.testing.TestingApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T12:39:23.214+05:30  WARN 23268 --- [Testing] [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 7.0. Please annotate the following attributes in @org.springframework.retry.annotation.EnableRetry with appropriate @AliasFor declarations: [proxyTargetClass]
+2025-08-28T12:39:24.832+05:30  INFO 23268 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-28T12:39:24.834+05:30  INFO 23268 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-28T12:39:24.865+05:30  INFO 23268 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 MongoDB repository interfaces.
+2025-08-28T12:39:25.984+05:30  INFO 23268 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T12:39:25.999+05:30  INFO 23268 --- [Testing] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T12:39:25.999+05:30  INFO 23268 --- [Testing] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-28T12:39:26.097+05:30  INFO 23268 --- [Testing] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T12:39:26.098+05:30  INFO 23268 --- [Testing] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2863 ms
+2025-08-28T12:39:26.298+05:30  INFO 23268 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring JWT decoder with JWK Set URI: https://dev-qyezg6s35kzzqg7v.us.auth0.com/.well-known/jwks.json
+2025-08-28T12:39:26.456+05:30  WARN 23268 --- [Testing] [main] com.demo.security.EncryptionService      : No encryption key configured, generating new key. THIS IS NOT SECURE FOR PRODUCTION!
+2025-08-28T12:39:26.469+05:30  INFO 23268 --- [Testing] [main] com.demo.security.EncryptionService      : Generated encryption key (save this in configuration): x538NHZX9/8B3SrSksTiZ8aOUpx2YuKHdYWREgrFces=
+2025-08-28T12:39:27.704+05:30  INFO 23268 --- [Testing] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1ab28416], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@52efb338, com.mongodb.Jep395RecordCodecProvider@64508788, com.mongodb.KotlinCodecProvider@30b1c5d5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3e2d65e1], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-08-28T12:39:27.737+05:30  INFO 23268 --- [Testing] [cluster-ClusterId{value='68b000a7ec3d8877e3393100', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27047300, minRoundTripTimeNanos=0}
+2025-08-28T12:39:28.163+05:30  INFO 23268 --- [Testing] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-28T12:39:28.270+05:30  INFO 23268 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring enhanced security for profile: []
+2025-08-28T12:39:28.276+05:30  INFO 23268 --- [Testing] [main] com.demo.config.SecurityConfig           : Configured CORS with allowed origins: [http://localhost:3000, http://127.0.0.1:3000]
+2025-08-28T12:39:29.387+05:30  INFO 23268 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-08-28T12:39:29.390+05:30  INFO 23268 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@623d222]]
+2025-08-28T12:39:29.392+05:30  INFO 23268 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-08-28T12:39:29.417+05:30  INFO 23268 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T12:39:29.473+05:30  INFO 23268 --- [Testing] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.3.45:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spring-boot-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spring-boot-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-28T12:39:29.528+05:30  INFO 23268 --- [Testing] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-28T12:39:29.719+05:30  INFO 23268 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-28T12:39:29.719+05:30  INFO 23268 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-28T12:39:29.720+05:30  INFO 23268 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756364969716
+2025-08-28T12:39:29.736+05:30  INFO 23268 --- [Testing] [main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Subscribed to topic(s): mongo-metadata
+2025-08-28T12:39:29.776+05:30  INFO 23268 --- [Testing] [main] com.demo.testing.TestingApplication      : Started TestingApplication in 7.324 seconds (process running for 7.921)
+2025-08-28T12:39:30.370+05:30  INFO 23268 --- [Testing] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Cluster ID: 6FsN0IuMQIusqCVnGAFpyQ
+2025-08-28T12:39:37.690+05:30  INFO 23268 --- [Testing] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T12:39:37.691+05:30  INFO 23268 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T12:39:37.695+05:30  INFO 23268 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-28T12:39:37.875+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:39:42.639+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:39:42.680+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:39:44.111+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:39:44.127+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:39:47.467+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:39:47.480+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:40:29.362+05:30  INFO 23268 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-08-28T12:41:12.735+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:12.743+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-6] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:41:14.277+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:14.282+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-7] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:41:30.837+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:30.844+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:41:32.010+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:32.018+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-9] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:41:32.244+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:32.248+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-10] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:41:32.482+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T12:41:32.495+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T12:42:55.760+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/couchbase-certificate
+2025-08-28T12:42:55.768+05:30 DEBUG 23268 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T13:10:29.369+05:30  INFO 23268 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2025-08-28T13:40:29.376+05:30  INFO 23268 --- [Testing] [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2025-08-28T14:10:29.392+05:30  INFO 23268 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2025-08-28T14:11:56.381+05:30  INFO 2920 --- [Testing] [main] com.demo.testing.TestingApplication      : Starting TestingApplication using Java 17.0.15 with PID 2920 (C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project\target\classes started by BommulaMallikaDurgaS in C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project)
+2025-08-28T14:11:56.386+05:30  INFO 2920 --- [Testing] [main] com.demo.testing.TestingApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T14:11:56.453+05:30  WARN 2920 --- [Testing] [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 7.0. Please annotate the following attributes in @org.springframework.retry.annotation.EnableRetry with appropriate @AliasFor declarations: [proxyTargetClass]
+2025-08-28T14:11:58.424+05:30  INFO 2920 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-28T14:11:58.426+05:30  INFO 2920 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-28T14:11:58.452+05:30  INFO 2920 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 MongoDB repository interfaces.
+2025-08-28T14:11:59.820+05:30  INFO 2920 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T14:11:59.838+05:30  INFO 2920 --- [Testing] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T14:11:59.840+05:30  INFO 2920 --- [Testing] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-28T14:12:00.007+05:30  INFO 2920 --- [Testing] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T14:12:00.007+05:30  INFO 2920 --- [Testing] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3533 ms
+2025-08-28T14:12:00.397+05:30  INFO 2920 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring JWT decoder with JWK Set URI: https://dev-qyezg6s35kzzqg7v.us.auth0.com/.well-known/jwks.json
+2025-08-28T14:12:00.694+05:30  WARN 2920 --- [Testing] [main] com.demo.security.EncryptionService      : No encryption key configured, generating new key. THIS IS NOT SECURE FOR PRODUCTION!
+2025-08-28T14:12:00.726+05:30  INFO 2920 --- [Testing] [main] com.demo.security.EncryptionService      : Generated encryption key (save this in configuration): LiXUfbqE8Bb15jp6txRbwC6MlAdDkvo0ZJnxVyOOjJw=
+2025-08-28T14:12:03.085+05:30  INFO 2920 --- [Testing] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@44392e64], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@e18d2a2, com.mongodb.Jep395RecordCodecProvider@1a77eb6, com.mongodb.KotlinCodecProvider@52d9f36b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5f9ebd5a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-08-28T14:12:03.145+05:30  INFO 2920 --- [Testing] [cluster-ClusterId{value='68b0165a2ac9ee3623a1909e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=65031400, minRoundTripTimeNanos=0}
+2025-08-28T14:12:03.773+05:30  INFO 2920 --- [Testing] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-28T14:12:03.923+05:30  INFO 2920 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring enhanced security for profile: []
+2025-08-28T14:12:03.929+05:30  INFO 2920 --- [Testing] [main] com.demo.config.SecurityConfig           : Configured CORS with allowed origins: [http://localhost:3000, http://127.0.0.1:3000]
+2025-08-28T14:12:05.864+05:30  INFO 2920 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-08-28T14:12:05.869+05:30  INFO 2920 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@53dd29e0]]
+2025-08-28T14:12:05.871+05:30  INFO 2920 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-08-28T14:12:05.916+05:30  INFO 2920 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T14:12:06.023+05:30  INFO 2920 --- [Testing] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.3.45:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spring-boot-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spring-boot-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-28T14:12:06.164+05:30  INFO 2920 --- [Testing] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-28T14:12:06.479+05:30  INFO 2920 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-28T14:12:06.480+05:30  INFO 2920 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-28T14:12:06.480+05:30  INFO 2920 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756370526476
+2025-08-28T14:12:06.505+05:30  INFO 2920 --- [Testing] [main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Subscribed to topic(s): mongo-metadata
+2025-08-28T14:12:06.554+05:30  INFO 2920 --- [Testing] [main] com.demo.testing.TestingApplication      : Started TestingApplication in 10.952 seconds (process running for 11.551)
+2025-08-28T14:12:07.550+05:30  INFO 2920 --- [Testing] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Cluster ID: 6FsN0IuMQIusqCVnGAFpyQ
+2025-08-28T14:12:33.482+05:30  INFO 2920 --- [Testing] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T14:12:33.482+05:30  INFO 2920 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T14:12:33.485+05:30  INFO 2920 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-28T14:12:33.700+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:12:35.838+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:12:35.888+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-3] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T14:12:36.042+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:12:36.051+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-4] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T14:13:05.769+05:30  INFO 2920 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-08-28T14:19:52.439+05:30 DEBUG 2920 --- [Testing] [http-nio-8080-exec-8] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:24:24.288+05:30  INFO 18620 --- [Testing] [main] com.demo.testing.TestingApplication      : Starting TestingApplication using Java 17.0.15 with PID 18620 (C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project\target\classes started by BommulaMallikaDurgaS in C:\Users\BommulaMallikaDurgaS\Downloads\withOutSpark\migration-project)
+2025-08-28T14:24:24.292+05:30  INFO 18620 --- [Testing] [main] com.demo.testing.TestingApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T14:24:24.353+05:30  WARN 18620 --- [Testing] [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 7.0. Please annotate the following attributes in @org.springframework.retry.annotation.EnableRetry with appropriate @AliasFor declarations: [proxyTargetClass]
+2025-08-28T14:24:26.087+05:30  INFO 18620 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-28T14:24:26.089+05:30  INFO 18620 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-28T14:24:26.113+05:30  INFO 18620 --- [Testing] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 MongoDB repository interfaces.
+2025-08-28T14:24:27.420+05:30  INFO 18620 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T14:24:27.443+05:30  INFO 18620 --- [Testing] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T14:24:27.443+05:30  INFO 18620 --- [Testing] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-28T14:24:27.552+05:30  INFO 18620 --- [Testing] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T14:24:27.553+05:30  INFO 18620 --- [Testing] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3172 ms
+2025-08-28T14:24:27.769+05:30  INFO 18620 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring JWT decoder with JWK Set URI: https://dev-qyezg6s35kzzqg7v.us.auth0.com/.well-known/jwks.json
+2025-08-28T14:24:27.958+05:30  WARN 18620 --- [Testing] [main] com.demo.security.EncryptionService      : No encryption key configured, generating new key. THIS IS NOT SECURE FOR PRODUCTION!
+2025-08-28T14:24:27.976+05:30  INFO 18620 --- [Testing] [main] com.demo.security.EncryptionService      : Generated encryption key (save this in configuration): XUb1H/S9bsK/P/fOvxEbPPTUfJve3revoiIyx4EmtS0=
+2025-08-28T14:24:29.324+05:30  INFO 18620 --- [Testing] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.15+6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@c6bf8d9], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@44392e64, com.mongodb.Jep395RecordCodecProvider@e18d2a2, com.mongodb.KotlinCodecProvider@1a77eb6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@52d9f36b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-08-28T14:24:29.355+05:30  INFO 18620 --- [Testing] [cluster-ClusterId{value='68b019457b74f3467b70bcad', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30955300, minRoundTripTimeNanos=0}
+2025-08-28T14:24:29.761+05:30  INFO 18620 --- [Testing] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-28T14:24:29.867+05:30  INFO 18620 --- [Testing] [main] com.demo.config.SecurityConfig           : Configuring enhanced security for profile: []
+2025-08-28T14:24:29.872+05:30  INFO 18620 --- [Testing] [main] com.demo.config.SecurityConfig           : Configured CORS with allowed origins: [http://localhost:3000, http://127.0.0.1:3000]
+2025-08-28T14:24:30.897+05:30  INFO 18620 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-08-28T14:24:30.900+05:30  INFO 18620 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5eadc347]]
+2025-08-28T14:24:30.901+05:30  INFO 18620 --- [Testing] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-08-28T14:24:30.932+05:30  INFO 18620 --- [Testing] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-28T14:24:30.982+05:30  INFO 18620 --- [Testing] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.3.45:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spring-boot-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spring-boot-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-28T14:24:31.042+05:30  INFO 18620 --- [Testing] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-28T14:24:31.212+05:30  INFO 18620 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-28T14:24:31.212+05:30  INFO 18620 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-28T14:24:31.212+05:30  INFO 18620 --- [Testing] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756371271211
+2025-08-28T14:24:31.232+05:30  INFO 18620 --- [Testing] [main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Subscribed to topic(s): mongo-metadata
+2025-08-28T14:24:31.271+05:30  INFO 18620 --- [Testing] [main] com.demo.testing.TestingApplication      : Started TestingApplication in 7.669 seconds (process running for 8.252)
+2025-08-28T14:24:31.841+05:30  INFO 18620 --- [Testing] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-boot-consumer-1, groupId=spring-boot-consumer] Cluster ID: 6FsN0IuMQIusqCVnGAFpyQ
+2025-08-28T14:25:02.752+05:30  INFO 18620 --- [Testing] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T14:25:02.753+05:30  INFO 18620 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T14:25:02.758+05:30  INFO 18620 --- [Testing] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-28T14:25:02.906+05:30 DEBUG 18620 --- [Testing] [http-nio-8080-exec-1] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:25:05.694+05:30 DEBUG 18620 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /api/transfer/upload/mongo-certificate
+2025-08-28T14:25:05.728+05:30 DEBUG 18620 --- [Testing] [http-nio-8080-exec-2] c.demo.security.SecurityHeadersFilter    : Applied security headers to request: POST /error
+2025-08-28T14:25:30.859+05:30  INFO 18620 --- [Testing] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
