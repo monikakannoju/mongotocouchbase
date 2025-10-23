@@ -22,6 +22,7 @@ public class KafkaProducer {
             kafkaTemplate.send(TOPIC, json);
         } catch (Exception e) {
             throw new RuntimeException("Failed to send metadata to Kafka", e);
+            mona
         }
     }
 }
